@@ -13,6 +13,7 @@ def main():
     "grace": { "name": "Grace Hopper", "date_of_birth": "1906" }
     }
 
-    ans = famous_births(women_scientists)
-    print(ans)
+    ans = dict(famous_births(women_scientists))
+    for i in ans:
+        print(f"{ans[i]['name']} is a great scientist born in {ans[i]['date_of_birth']}")
 main()

@@ -1,10 +1,7 @@
 """cell05"""
-def main():
-    """"ex05"""
-    mess = str(input())
-    array = [i.strip("\"") for i in mess.split('" "')]
-    if array != [""]:
-        print(array[0])
-    else:
-        print("none")
-main()
+import sys
+if len(sys.argv)-1 == 0:
+    print("none")
+else:
+    print(sys.argv[1])
+
